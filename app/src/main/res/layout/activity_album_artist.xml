@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       tools:context="dgmusic.AlbumArtistActivity">
+
+       <TextView
+           android:id="@+id/main3_artist"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:text="Title:"
+           android:textColor="@color/colourBlack"
+           android:textSize="50dp"
+           android:layout_gravity="center_horizontal"
+           android:gravity="center_horizontal"/>
+
+       <ImageView
+           android:id="@+id/main3_picture"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:scaleType="fitStart"
+           android:adjustViewBounds="true"/>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_gravity="center_horizontal"
+           android:gravity="center_horizontal">
+
+           <ImageView
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:background="@null"
+               android:src="@mipmap/ic_launcher_play_bluewhite_round"/>
+
+           <Button
+               android:id="@+id/main3_tracklist"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:textColor="@color/colorBlue"
+               android:text="Tracks"
+               android:textSize="25dp"
+               style="?android:attr/borderlessButtonStyle"/>
+
+       </LinearLayout>
+
+       <Button
+           android:id="@+id/main3_link"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:gravity="center_horizontal"
+           android:textColor="@color/colorRed"
+           android:textSize="20dp"
+           style="?android:attr/borderlessButtonStyle"/>
+
+   </LinearLayout>
+
+</ScrollView>
+
